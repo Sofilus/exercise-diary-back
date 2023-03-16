@@ -1,7 +1,23 @@
-POST https://example.com/comments HTTP/1.1
+POST http://localhost:3000/diaryposts
 content-type: application/json
 
 {
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "username": "kalle",
+    "postName": "Status idag",
+    "text": "Hej hej idag är en sådär dag"
 }
+
+###
+
+get http://localhost:3000/diaryposts
+
+###
+
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+    "username": "kalle"
+}
+
+###
